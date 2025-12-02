@@ -18,25 +18,25 @@ export const HeroSection = () => {
        <div className=" size-[1020px] hero-item"></div> 
        <div className=" size-[1220px] hero-item"></div> 
        <HeroOrbit size={800} rotation={-72}>
-         <StarIcon classname="size-28 text-emerald-300"/>
+         <StarIcon className="size-28 text-emerald-300"/>
        </HeroOrbit>
        <HeroOrbit size={550} rotation={98}>
-         <StarIcon classname="size-8 text-emerald-300"/> 
+         <StarIcon className="size-8 text-emerald-300"/> 
        </HeroOrbit>
         <HeroOrbit size={590} rotation={20}>
-         <StarIcon classname="size-12 text-emerald-300"/> 
+         <StarIcon className="size-12 text-emerald-300"/> 
         </HeroOrbit>
         <HeroOrbit size={430} rotation={79}>
-         <SparkleIcon classname="size-8 text-emerald-300/5"/> 
+         <SparkleIcon className="size-8 text-emerald-300/5"/> 
         </HeroOrbit>
          <HeroOrbit size={440} rotation={-14}>
-         <SparkleIcon classname="size-5 text-emerald-300/5"/> 
+         <SparkleIcon className="size-5 text-emerald-300/5"/> 
          </HeroOrbit>
           <HeroOrbit size={530} rotation={178}>
-         <SparkleIcon classname="size-10 text-emerald-300/20"/> 
+         <SparkleIcon className="size-10 text-emerald-300/20"/> 
          </HeroOrbit>
           <HeroOrbit size={710} rotation={144}>
-          <SparkleIcon classname="size-14 text-emerald-300/20"/> 
+          <SparkleIcon className="size-14 text-emerald-300/20"/> 
          </HeroOrbit>
           <HeroOrbit size={720} rotation={85}>
           <div className= "size-3 rounded-full - bg-emerald-300/15" /> 
@@ -48,7 +48,7 @@ export const HeroSection = () => {
           <div className= "size-2 rounded-full - bg-emerald-300/15" /> 
          </HeroOrbit>
          </div>
-         <div className="container">
+         <div className="container max-w-5xl mx-auto px-4">
           <div className="flex flex-col items-center">
            <Image src={memojiImage} className="w-20 sm:w-24 md:w-24" alt="my picture"/>
            <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
@@ -72,7 +72,7 @@ export const HeroSection = () => {
             </button>
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
               <span className="font-semibold">👋</span>
-              <span>I&apos;m Connect</span>
+              <span>Let&apos;s Connect</span>
             </button>
           </div>
          </div>
