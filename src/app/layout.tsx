@@ -3,6 +3,7 @@ import {Inter, Calistoga} from "next/font/google"
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
+
 const inter = Inter({subsets:["latin"], variable: "--fonts-sans"})
 const calistoga = Calistoga({
   subsets:["latin"], 
@@ -12,7 +13,6 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
 };
 
 export default function RootLayout({
