@@ -18,13 +18,13 @@ export const HeroSection = () => {
        <div className=" size-[1020px] hero-item"></div> 
        <div className=" size-[1220px] hero-item"></div> 
        <HeroOrbit size={800} rotation={-72}>
-         <StarIcon className="size-28 text-emerald-300"/>
+         <StarIcon className="size-28 text-white"/>
        </HeroOrbit>
        <HeroOrbit size={550} rotation={98}>
-         <StarIcon className="size-8 text-emerald-300"/> 
+         <StarIcon className="size-8 text-white"/> 
        </HeroOrbit>
         <HeroOrbit size={590} rotation={20}>
-         <StarIcon className="size-12 text-emerald-300"/> 
+         <StarIcon className="size-12 text-white"/> 
         </HeroOrbit>
         <HeroOrbit size={430} rotation={79}>
          <SparkleIcon className="size-8 text-emerald-300/5"/> 
