@@ -87,7 +87,7 @@ export const ProjectsSection = () => {
           px-6 rounded-xl font-semibold inline-flex items-center justify-center 
           gap-2 mt-8
           ">
-            <span>Visit View Live Site</span>
+            <span>Visit Live Site</span>
             <ArrowUpRightIcon className="size-4"/>
             </button>
           </a>
