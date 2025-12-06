@@ -36,7 +36,7 @@ export const TapeSection = () => {
           >
             <div 
               className="flex flex-none gap-4 pr-4 py-3"
-              style={{ animation: 'moveLeft 20s linear infinite' }}
+              style={{ animation: 'moveLeft 30s linear infinite' }}
             >
               {[...Array(2)].map((_, idx) => (
                 <Fragment key={idx}>
