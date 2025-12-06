@@ -118,11 +118,13 @@ export const AboutSection = () => {
       description="Explore the technologies and tools I use to craft exceptional digital experiences"
       className=""
       />
-     <ToolboxItems toolboxItems={toolboxItems} className="mt-6"/>
+     <ToolboxItems toolboxItems={toolboxItems}
+      className=""
+      itemsWrapperClassName="[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"/>
      <ToolboxItems 
      toolboxItems={toolboxItems} 
-     className=" "
-      itemsWrapperClassName="-translate-x-1/2" />
+     className="mt-6 "
+      itemsWrapperClassName="-translate-x-1/2 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" />
    </Card>
     </div>
     <div className="grid grid-cols-1

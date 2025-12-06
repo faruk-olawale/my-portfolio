@@ -23,7 +23,7 @@ const config: Config = {
     extend: {
       animation: {
         'ping-large': 'ping-large 1s ease-in-out infinite',
-        'move-left': 'move-left 20s linear infinite',
+        'move-left': 'move-left 1s linear infinite',
       },
       keyframes: {
         'ping-large': {
