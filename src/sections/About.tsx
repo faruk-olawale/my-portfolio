@@ -107,7 +107,7 @@ export const AboutSection = () => {
    description="Learn more about who I am, What I do, and what Inspires me."
    />
    <div className="mt-20 flex flex-col gap-8">
-    <div className="grid grid-cols-1 gap-8
+   <div className="grid grid-cols-1 gap-8
      md:grid-cols-5 ">
    <Card className="h-[320px] md:col-span-2">
     <CardHeader title="My Reads" description="Explore the books shaping my perspectives."/>
@@ -116,20 +116,21 @@ export const AboutSection = () => {
     </div>
    </Card>
    
-   <Card className="h-[320px]  md:col-span-3 ">
-      <CardHeader 
-      title="My Toolbox" 
-      description="Explore the technologies and tools I use to craft exceptional digital experiences"
-      className=""
-      />
-     <ToolboxItems toolboxItems={toolboxItems}
-      className=""
-      itemsWrapperClassName="[mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"/>
-     <ToolboxItems 
-     toolboxItems={toolboxItems} 
-     className="mt-6 "
-      itemsWrapperClassName="-translate-x-1/2 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" />
-   </Card>
+ <Card className="h-[320px] md:col-span-3 overflow-hidden">
+  <CardHeader 
+    title="My Toolbox" 
+    description="Explore the technologies and tools I use to craft exceptional digital experiences"
+  />
+  <ToolboxItems 
+    toolboxItems={toolboxItems}
+    itemsWrapperClassName="move-left"
+  />
+  <ToolboxItems 
+    toolboxItems={toolboxItems} 
+    className="mt-6"
+    itemsWrapperClassName="move-right"
+  />
+</Card>
     </div>
     <div className="grid grid-cols-1
      md:grid-cols-5 gap-8">

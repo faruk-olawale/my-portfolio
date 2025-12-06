@@ -4,7 +4,7 @@ const footerLinks = [
   { icon: FaXTwitter, href: "https://x.com/farukolawale3?s=11" },
   { icon: FaGithub, href: "https://github.com/faruk-olawale " },
   { icon: FaLinkedin, href: "https://www.linkedin.com/in/faruk-ismail-4812213a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-  { icon: FaInstagram, href: "#" },
+  { icon: FaInstagram, href: "  https://www.instagram.com/farry.yo/" },
 ];
 
 export const Footer = () => {

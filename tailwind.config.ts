@@ -7,6 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     screens: {
       sm: "375px",
@@ -20,29 +21,33 @@ const config: Config = {
         md: "2rem",
       },
     },
+
     extend: {
       animation: {
-        'ping-large': 'ping-large 1s ease-in-out infinite',
-        'move-left': 'move-left 1s linear infinite',
+        "move-left": "move-left 30s linear infinite",
+        "move-right": "move-right 30s linear infinite",
+        "ping-large": "ping-large 1s ease-in-out infinite",
       },
+
       keyframes: {
-        'ping-large': {
-          '75%, 100%': {
-            transform: 'scale(3)',
-            opacity: '0',
-          },
+       'move-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
-        'move-left': {
-          '0%': {
-            transform: 'translateX(0%)',
-          },
-          '100%': {
-            transform: 'translateX(-50%)',
+       'move-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        "ping-large": {
+          "75%, 100%": {
+            transform: "scale(3)",
+            opacity: "0",
           },
         },
       },
     },
   },
+
   plugins: [],
 };
 
