@@ -9,7 +9,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import grainImage from "@/assets/images/grain.jpg"
 import { Card } from "@/components/Card";
-import { Fragment, useState, useRef } from "react";
+import { Fragment, useState } from "react";
 
 const testimonials = [
   {
@@ -46,72 +46,23 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   const [isPaused, setIsPaused] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollOffset, setScrollOffset] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const animationRef = useRef<HTMLDivElement>(null);
-
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setIsDragging(true);
-    setIsPaused(true);
-    setStartX(e.clientX);
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setIsDragging(true);
-    setIsPaused(true);
-    setStartX(e.touches[0].clientX);
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const diff = e.clientX - startX;
-    setScrollOffset(prev => prev + diff);
-    setStartX(e.clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (!isDragging) return;
-    const diff = e.touches[0].clientX - startX;
-    setScrollOffset(prev => prev + diff);
-    setStartX(e.touches[0].clientX);
-  };
-
-  const handleEnd = () => {
-    setIsDragging(false);
-    setTimeout(() => setIsPaused(false), 100);
-  };
 
   return (
-    <div className="py-12 lg:py-20" id="testimonial">
+    <div className="py-12 lg:py-20">
       <div className="container max-w-5xl mx-auto px-4">
         <SectionHeader 
           eyebrow="Happy Client's" 
           title="What Clients Say about Me" 
           description="Don't just take my word for it. See what my clients have to say about my work." 
         />
-        <div 
-          ref={containerRef}
-          className="mt-16 lg:mt-24 flex overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4 cursor-grab active:cursor-grabbing select-none"
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleEnd}
-          onMouseLeave={handleEnd}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleEnd}
-        >
+        <div className="mt-16 lg:mt-24 flex overflow-x-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
           <div 
-            ref={animationRef}
             className="flex gap-8 pr-8 flex-none"
-            onMouseEnter={() => !isDragging && setIsPaused(true)}
-            onMouseLeave={() => !isDragging && setIsPaused(false)}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
             style={{ 
               animation: 'moveLeft 90s linear infinite',
-              animationPlayState: isPaused ? 'paused' : 'running',
-              transform: `translateX(${scrollOffset}px)`
+              animationPlayState: isPaused ? 'paused' : 'running'
             }}
           >
             {[...new Array(2)].fill(0).map((_, index) => (
@@ -127,7 +78,6 @@ export const TestimonialsSection = () => {
                           src={testimonial.avatar}
                           alt={testimonial.name}
                           className="max-h-full"
-                          draggable={false}
                         />
                       </div> 
                       <div>
@@ -141,11 +91,6 @@ export const TestimonialsSection = () => {
               </Fragment>
             ))}
           </div>
-        </div>
-        
-        {/* Swipe hint */}
-        <div className="text-center mt-4 text-sm text-white/40">
-          👆 Drag or swipe to explore testimonials
         </div>
       </div>
       
