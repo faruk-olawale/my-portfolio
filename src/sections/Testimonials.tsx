@@ -48,7 +48,7 @@ export const TestimonialsSection = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <div className="py-12 lg:py-20">
+    <div className="py-12 lg:py-20" id="testimonial">
       <div className="container max-w-5xl mx-auto px-4">
         <SectionHeader 
           eyebrow="Happy Client's" 
