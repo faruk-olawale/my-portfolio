@@ -121,15 +121,17 @@ export const AboutSection = () => {
     title="My Toolbox" 
     description="Explore the technologies and tools I use to craft exceptional digital experiences"
   />
-  <ToolboxItems 
-    toolboxItems={toolboxItems}
-    itemsWrapperClassName="move-left"
-  />
-  <ToolboxItems 
-    toolboxItems={toolboxItems} 
-    className="mt-6"
-    itemsWrapperClassName="move-right [animation-duration:2s]"
-  />
+<ToolboxItems 
+  toolboxItems={toolboxItems} 
+  className="mt-6"
+  itemsWrapperClassName="move-left"
+/>
+
+<ToolboxItems 
+  toolboxItems={toolboxItems} 
+  className="mt-6"
+  itemsWrapperClassName="move-right"
+/>
 </Card>
     </div>
     <div className="grid grid-cols-1

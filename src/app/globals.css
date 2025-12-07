@@ -16,6 +16,14 @@
   .container {
     @apply lg:max-w-5xl;
   }
+  
+  .move-left {
+    animation: move-left 40s linear infinite;
+  }
+  
+  .move-right {
+    animation: move-right 35s linear infinite;
+  }
 }
 
 @keyframes move-left {
