@@ -8,8 +8,6 @@ import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
-
-
 const portfolioProjects = [
   {
     company: "Geegstack Academy",
@@ -22,6 +20,7 @@ const portfolioProjects = [
     ],
     link: "https://geegstack-six.vercel.app/",
     image: darkSaasLandingPage,
+    techStack: [ "React", "Tailwind CSS"],
   },
   {
     company: "FarukCinema",
@@ -34,6 +33,7 @@ const portfolioProjects = [
     ],
     link: "https://movie-app-nu-umber.vercel.app/",
     image: lightSaasLandingPage,
+    techStack: [ "React","JavaScript", "Tailwind CSS"],
   },
   {
     company: "Job Listing Platform",
@@ -47,6 +47,7 @@ const portfolioProjects = [
     ],
     link: "https://static-job-listing-cxmt.vercel.app/",
     image: aiStartupLandingPage,
+    techStack: ["React", "API", "Tailwind CSS"],
   },
 ];
 
@@ -66,8 +67,7 @@ export const ProjectsSection = () => {
             top:`calc(64px + ${projectIndex *40}px`,
           }}
         >
-            <div className="lg:grid lg:grid-cols-2
-             lg:gap-16">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div className="lg:pb-16">
             <div className="bg-gradient-to-r from-emerald-300 to-sky-400
             inline-flex gap-2 font-bold uppercase tracking-widest
@@ -79,6 +79,19 @@ export const ProjectsSection = () => {
           
           <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
           <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
+          
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-2 mt-4">
+            {project.techStack.map((tech) => (
+              <span 
+                key={tech}
+                className="px-3 py-1 text-xs bg-emerald-300/10 text-emerald-300 rounded-full border border-emerald-300/20 font-medium"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          
           <ul className="flex flex-col gap-4 mt-4 md:mt-5">
             {project.results.map((result,i) => (
               <li key={i} className="flex gap-2 text-sm md:text-base text-white/50">
