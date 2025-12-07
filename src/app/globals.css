@@ -18,11 +18,11 @@
   }
   
   .move-left {
-    animation: move-left 40s linear infinite;
+    animation: move-left 100s linear infinite;
   }
   
   .move-right {
-    animation: move-right 35s linear infinite;
+    animation: move-right 85s linear infinite;
   }
 }
 

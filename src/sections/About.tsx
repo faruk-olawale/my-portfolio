@@ -61,16 +61,17 @@ const hobbies = [
   },
 
     {
-    title:"Hiking",
-    emoji:"🥾",
-    left:'35%',
-    top:'40%',
-  },
-    {
     title:"Gaming",
     emoji:"🎮",
     left:'10%',
     top:'35%',
+  },
+
+    {
+    title:"Hiking",
+    emoji:"🥾",
+    left:'35%',
+    top:'40%',
   },
 
 

@@ -64,6 +64,7 @@ export const TestimonialsSection = () => {
               animation: 'moveLeft 90s linear infinite',
               animationPlayState: isPaused ? 'paused' : 'running'
             }}
+            
           >
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
