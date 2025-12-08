@@ -90,7 +90,7 @@ export const HeroSection = () => {
       className="inline-flex items-center gap-2 h-12 px-6 rounded-xl relative z-20 
                 border border-white/15 bg-white text-gray-900"
     >
-      <span className="font-semibold">Let's Connect</span>
+      <span className="font-semibold">Let&apos;s  Connect</span>
       👋
     </a>
 
