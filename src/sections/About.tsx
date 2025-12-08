@@ -43,6 +43,7 @@ const toolboxItems = [
     title: "Chrome",
     iconType: ChromeIcon,
   },
+  
 ]
 
 const hobbies = [
@@ -104,7 +105,7 @@ export const AboutSection = () => {
   <div className="container max-w-5xl mx-auto px-4">
   <SectionHeader
    eyebrow="About me" 
-   title="A Glimps Into My World" 
+   title="A Glimpse Into My World" 
    description="Learn more about who I am, What I do, and what Inspires me."
    />
    <div className="mt-20 flex flex-col gap-8">

@@ -13,15 +13,15 @@ import { Fragment, useState } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Faruk was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Marcus Johnson",
+    position: "Founder @ LocalEats",
+    text: "I'm not technical at all, and Faruk made the whole process painless. He explained things in plain English and delivered exactly what I sketched on a napkin. Our mobile orders went up 3x in the first month after launch.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Faruk was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Priya Sharma",
+    position: "Engineering Manager @ HealthTrack AI",
+    text: "We needed someone who could jump into our messy React codebase and not complain. Faruk refactored our most problematic components, wrote actual tests, and documented everything. Our bug reports dropped by 60% after his changes went live.",
     avatar: memojiAvatar2,
   },
   {
@@ -31,9 +31,9 @@ const testimonials = [
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Faruk is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "David Okonkwo",
+    position: "CTO @ EduConnect Nigeria",
+    text: "We hired Faruk for a 2-week contract and ended up extending it to 3 months. He spotted issues in our API integration that our backend team missed, and his suggestions improved our overall architecture. Rare to find a frontend dev who thinks full-stack.",
     avatar: memojiAvatar4,
   },
   {

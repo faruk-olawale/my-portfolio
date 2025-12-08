@@ -16,7 +16,7 @@ const portfolioProjects = [
     results: [
      { title: "Improved course navigation with clean UI/UX design" },
      { title: "Boosted user retention with personalized learning paths" },
-     { title: "Reduced page load time by optimizing resource loading" },
+     { title:"Reduced page load time by 45% (from 3.2s to 1.8s) through code splitting and lazy loading" },
     ],
     link: "https://geegstack-six.vercel.app/",
     image: darkSaasLandingPage,
