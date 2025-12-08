@@ -10,6 +10,12 @@ import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg"
+import nodejs from "@/assets/icons/nodedotjs.svg"
+import nextjs from "@/assets/icons/nextdotjs.svg"
+import git from "@/assets/icons/git.svg"
+import tailwind from "@/assets/icons/tailwindcss.svg"
+import express from "@/assets/icons/express.svg"
+import vercel from "@/assets/icons/vercel.svg"
 import { TechIcon } from "@/components/TechIcon";
 import mapImage from "@/assets/images/map.png"
 import smileEmoji from "@/assets/images/memoji-smile.png"
@@ -43,6 +49,35 @@ const toolboxItems = [
     title: "Chrome",
     iconType: ChromeIcon,
   },
+    {
+    title: "git",
+    iconType: git,
+  },
+  {
+    title: "nextjs",
+    iconType: nextjs,
+  },
+  {
+    title: "tailwind",
+    iconType: tailwind,
+  },
+  {
+    title: "node",
+    iconType: nodejs,
+  },
+  {
+    title: "Github",
+    iconType: GithubIcon,
+  },
+  {
+    title: "express",
+    iconType: express,
+  },
+  {
+    title: "vercel",
+    iconType: vercel,
+  },
+
   
 ]
 

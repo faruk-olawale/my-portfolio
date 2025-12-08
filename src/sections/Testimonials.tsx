@@ -25,16 +25,16 @@ const testimonials = [
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Faruk's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    name: "James Mitchell",
+    position: "Creative Director @ BrandCraft Studio",
+    text: "Most developers tell me my designs are 'impossible to build' or water them down. Faruk actually figured out how to make the animations work smoothly on mobile without killing performance. The client was blown away at the presentation.",
+    avatar: memojiAvatar4,
   },
   {
     name: "David Okonkwo",
     position: "CTO @ EduConnect Nigeria",
     text: "We hired Faruk for a 2-week contract and ended up extending it to 3 months. He spotted issues in our API integration that our backend team missed, and his suggestions improved our overall architecture. Rare to find a frontend dev who thinks full-stack.",
-    avatar: memojiAvatar4,
+    avatar: memojiAvatar3,
   },
   {
     name: "Michael Brown",
