@@ -83,27 +83,29 @@ export const HeroSection = () => {
           </p>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          
-          {/* Download CV */}
-          <a
-            href="/cv.pdf"
-            download
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl relative z-20"
-          >
-            <span className="font-semibold">📄 Download CV</span>
-          </a>
+   <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
 
-          {/* Explore My Work */}
-          <a
-            href="#project"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl relative z-20"
-          >
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </a>
-        </div>
+    <a
+      href="#contact"
+      className="inline-flex items-center gap-2 h-12 px-6 rounded-xl relative z-20 
+                border border-white/15 bg-white text-gray-900"
+    >
+      <span className="font-semibold">Let's Connect</span>
+      👋
+    </a>
+
+
+    <a
+    href="#project"
+    className="inline-flex items-center gap-2 h-12 px-6 rounded-xl relative z-20 
+               border border-white/15 text-white"
+      >
+        <span className="font-semibold">Explore My Work</span>
+        <ArrowDown className="size-4" />
+      </a>
+
+</div>
+
       </div>
     </div>
   );

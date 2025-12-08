@@ -113,24 +113,31 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
 
-                  {/* --- BUTTON SECTION UPDATED --- */}
-                  <div className="flex gap-4 mt-8">
-                    <a href={project.liveDemo} target="_blank">
-                      <button className="bg-white text-gray-950 h-12 px-6 rounded-xl 
-                        font-semibold inline-flex items-center justify-center gap-2">
-                        <span>Live Demo</span>
-                        <ArrowUpRightIcon className="size-4"/>
-                      </button>
-                    </a>
+             <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <a
+              href={project.liveDemo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              <button className="bg-white text-gray-950 h-12 px-6 rounded-xl font-semibold inline-flex items-center gap-2 whitespace-nowrap">
+                <span>Live Demo</span>
+                <ArrowUpRightIcon className="size-4" />
+              </button>
+            </a>
 
-                    <a href={project.github} target="_blank">
-                      <button className="border border-white/20 text-white h-12 px-6 rounded-xl 
-                        font-semibold inline-flex items-center justify-center gap-2">
-                        <span>GitHub</span>
-                        <ArrowUpRightIcon className="size-4"/>
-                      </button>
-                    </a>
-                  </div>
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              <button className="border border-white/20 text-white h-12 px-6 rounded-xl font-semibold inline-flex items-center gap-2 whitespace-nowrap">
+                <span>GitHub</span>
+                <ArrowUpRightIcon className="size-4" />
+              </button>
+            </a>
+          </div>
 
                 </div>
 
