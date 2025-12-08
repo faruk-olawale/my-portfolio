@@ -1,45 +1,19 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
 import memojiImage from "@/assets/images/my-image.png";
 import grainImage from "@/assets/images/grain.jpg";
-import StarIcon from "@/assets/icons/star.svg";
-import SparkleIcon from "@/assets/icons/sparkle.svg";
-import { HeroOrbit } from "@/components/HeroOrbit";
+import ArrowDownIcon from "@/assets/icons/arrow-down.svg";
 
 export const HeroSection = () => {
   return (
     <section className="relative py-32 md:py-48 lg:py-60 overflow-x-clip">
-      {/* ================= BACKGROUND + ORBITS ================= */}
+      {/* ================= BACKGROUND ================= */}
       <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         {/* Grain Background */}
         <div
           className="absolute inset-0 -z-30 opacity-5 pointer-events-none"
-          style={{ backgroundImage: `url(${grainImage.src})`, backgroundSize: 'cover' }}
+          style={{ backgroundImage: `url(${grainImage.src})`, backgroundSize: "cover" }}
         />
-
-        {/* Decorative Orbits */}
-        {[430, 440, 520, 530, 550, 590, 650, 710, 720, 800].map((size, i) => (
-          <HeroOrbit
-            key={i}
-            size={size}
-            rotation={[-51, -41, -14, 20, 79, 85, 98, 144, 178, -72][i]}
-            shouldOrbit
-            orbitDuration={`${30 + i * 2}s`}
-            shouldspin
-            spinDuration="6s"
-            className="pointer-events-none"
-          >
-            {/* Alternate Sparkle / Star / small dot */}
-            {i % 3 === 0 ? (
-              <SparkleIcon className={`size-${[3,5,8,10,12,14,28][i % 7]} text-emerald-300/20`} />
-            ) : i % 3 === 1 ? (
-              <StarIcon className={`size-${[8,12,28][i % 3]} text-white`} />
-            ) : (
-              <div className="size-3 rounded-full bg-emerald-300/15" />
-            )}
-          </HeroOrbit>
-        ))}
       </div>
 
       {/* ================= MAIN CONTENT ================= */}
@@ -67,21 +41,25 @@ export const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-
-            <a
+          {/* Preview CV */}
+          <a
             href="/cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 h-12 rounded-xl bg-white text-gray-900 font-semibold border border-white hover:bg-gray-100 transition"
           >
-            📄Download CV
+            📄 Preview CV
           </a>
 
-            <a
+          {/* Explore Work */}
+          <a
             href="#project"
             className="inline-flex items-center gap-2 px-6 py-3 h-12 rounded-xl border border-white/20 text-white hover:bg-white/10 transition"
           >
-             Explore My Work
+            <span className="inline-flex items-center gap-2">
+              Explore My Work
+              <ArrowDownIcon className="w-4 h-4" />
+            </span>
           </a>
         </div>
       </div>
