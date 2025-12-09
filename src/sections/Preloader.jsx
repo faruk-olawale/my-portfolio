@@ -8,7 +8,7 @@ export default function Preloader({ onComplete }) {
   const fullName = "Faruk";
 
   useEffect(() => {
-    // Start spelling immediately with a short delay
+    
     setTimeout(() => {
       let currentIndex = 0;
       const spellingInterval = setInterval(() => {
@@ -18,10 +18,10 @@ export default function Preloader({ onComplete }) {
         } else {
           clearInterval(spellingInterval);
         }
-      }, 150); // 150ms between each letter
+      }, 150); 
 
       return () => clearInterval(spellingInterval);
-    }, 200); // Reduced from implicit delay to just 200ms
+    }, 200); 
 
     const handleLoad = () => {
       setTimeout(() => {

@@ -9,6 +9,7 @@ const calistoga = Calistoga({
   subsets:["latin"], 
   variable: "--fonts-serif",
   weight:["400"],
+  
 })
 
 export const metadata: Metadata = {
