@@ -3,8 +3,7 @@
 🌐 My Portfolio
 
 Welcome to my personal portfolio website! Built with Next.js, Tailwind CSS, and TypeScript, it showcases my featured projects, skills, and a glimpse into my developer journey.
-
-🚀 Features
+z
 
 - Responsive design  
 - Project showcase section  
